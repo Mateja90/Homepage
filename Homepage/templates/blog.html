@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+  </head>
+  <body>
+    <a href ="/">Homepage</a>
+    <a href ="/omeni">O meni</a>
+    <a href ="/projekti">Projekt</a>
+    <a href ="/kontakt">Kontakt</a><br>
+    <p>{{sporocilo2}}</p>
+    {%for x in blogs%}
+    <h2>{{x.title}}</h2>
+    <p>{{x.text}}</p>
+    {%endfor%}
+
+  </body>
+</html>
